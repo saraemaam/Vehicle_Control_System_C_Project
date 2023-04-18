@@ -1,0 +1,48 @@
+/*
+ * Variables.h
+ *
+ *  Created on: Mar 7, 2023
+ *      Author: Sarah
+ */
+
+#include "data_types.h"
+
+#ifndef VARIABLES_H_
+#define VARIABLES_H_
+
+
+uint8 user_input;
+
+uint8 sesnor_input;
+
+uint8 traffic_light_sensor;
+uint16 room_temperature_sensor;
+
+uint8 AC_STATUS;
+
+uint16 set_vehicle_speed = 100;
+uint16 *p_vehicle_speed = & set_vehicle_speed ;
+
+uint16 current_room_temperature = 25;
+
+uint16 Engine_temperature_controller;
+uint16 Engine_temperature = 95;
+
+
+enum AC_STATE
+{
+
+	AC_OFF, AC_0N
+
+};
+
+
+enum Engine_temperature_controller
+{
+
+	ENGINE_TEMP_CONTROLLER_OFF,ENGINE_TEMP_CONTROLLER_ON
+
+};
+
+
+#endif /* VARIABLES_H_ */

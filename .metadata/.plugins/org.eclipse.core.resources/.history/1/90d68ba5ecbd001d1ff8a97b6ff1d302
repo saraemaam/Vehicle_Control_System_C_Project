@@ -1,0 +1,110 @@
+/*
+ * program.c
+ *
+ *  Created on: Mar 7, 2023
+ *      Author: Sarah
+ */
+
+#include<stdio.h>
+#include "data_types.h"
+#include "Variables.h"
+
+
+void display_main_menu (void)
+{
+
+	printf("a. Turn on the vehicle engine\n");
+	printf("b. Turn off the vehicle engine\n");
+	printf("c. Quit the system\n\n");
+
+}
+
+void Sensor_set_menu (void)
+{
+	printf("a. Turn off the engine\n");
+	printf("b. Set the traffic light color\n");
+	printf("c. Set the room temperature (Temperature Sensor)\n");
+	printf("d. Set the engine temperature (Engine Temperature Sensor)\n");
+}
+
+
+
+void Set_the_traffic_light_color(uint8 traffic_light_sensor)
+{
+
+	if ( traffic_light_sensor == 'G' || traffic_light_sensor == 'g')
+	{
+
+		set_vehicle_speed =100;
+	}
+
+	else if ( traffic_light_sensor == 'O' || traffic_light_sensor == 'o')
+	{
+
+		set_vehicle_speed=30;
+
+	}
+
+	else if (traffic_light_sensor == 'R' || traffic_light_sensor == 'r')
+	{
+
+		*p_vehicle_speed=0;
+
+	}
+
+}
+
+
+void Turn_on_vehicle_engine(void)
+{
+
+
+}
+
+void Set_the_room_temperature (uint16 set_room_temperature)
+
+{
+	current_room_temperature = 	set_room_temperature ;
+}
+
+
+
+
+void Turn_ON_AC (void)
+{
+
+	AC_STATUS = AC_ON;
+
+}
+void Turn_OFF_AC (void)
+{
+
+	AC_STATUS = AC_OFF;
+
+}
+
+
+
+
+void OFF_Engine_Temperature_Controller(void)
+{
+
+	Engine_temperature_controller = ENGINE_TEMP_CONTROLLER_OFF ;
+
+}
+
+void ON_Engine_Temperature_Controller(void)
+{
+
+	Engine_temperature_controller = ENGINE_TEMP_CONTROLLER_ON ;
+
+}
+void Set_the_engine_temperature(uint16 Engine_temp)
+{
+
+	Engine_temperature = Engine_temp ;
+
+}
+
+
+

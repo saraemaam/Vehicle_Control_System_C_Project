@@ -1,0 +1,34 @@
+/*
+ * program_interface.h
+ *
+ *  Created on: Mar 8, 2023
+ *      Author: Sarah
+ */
+
+#ifndef PROGRAM_INTERFACE_H_
+#define PROGRAM_INTERFACE_H_
+
+#include "data_types.h"
+
+void Start_vehicle_control_system (void);
+void Sensor_set_menu (void);
+void Set_the_traffic_light_color(uint8 traffic_light_sensor);
+void Set_the_room_temperature (uint16 set_room_temperature);
+void Turn_ON_AC (void);
+void Turn_OFF_AC (void);
+void OFF_Engine_Temperature_Controller(void);
+void ON_Engine_Temperature_Controller(void);
+void Set_the_engine_temperature(uint16 Engine_temp);
+void Quit(void);
+void turn_off_the_engine(void);
+void display_system_state (void);
+void Set_vehicle_speed (void);
+void Set_room_temp (void);
+void Set_Engine_Temp (void);
+
+
+
+
+
+
+#endif /* PROGRAM_INTERFACE_H_ */

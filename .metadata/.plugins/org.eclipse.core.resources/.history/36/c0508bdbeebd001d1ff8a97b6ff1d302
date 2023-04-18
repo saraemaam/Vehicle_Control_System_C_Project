@@ -1,0 +1,58 @@
+/*
+ * Variables.h
+ *
+ *  Created on: Mar 7, 2023
+ *      Author: Sarah
+ */
+
+#ifndef VARIABLES_H_
+#define VARIABLES_H_
+
+#include "data_types.h"
+
+
+typedef enum
+{
+
+	ENGINE_TEMP_CONTROLLER_OFF,ENGINE_TEMP_CONTROLLER_ON
+
+}Engine_temperature_controller_t;
+
+typedef enum  {
+	OFF,ON
+}Engine_state_t;
+
+typedef enum
+{
+
+	AC_OFF, AC_ON
+
+}AC_STATE_t;
+
+
+extern uint8  user_input;
+
+extern uint8 sesnor_input;
+
+extern uint8 traffic_light_sensor;
+extern uint16 room_temperature_sensor;
+
+extern uint8 AC_STATUS;
+
+extern uint16 set_vehicle_speed ;
+
+
+extern uint16 current_room_temperature ;
+
+extern uint16 Engine_temperature_controller;
+extern uint16 Engine_temperature ;
+
+extern Engine_state_t engine_state;
+
+
+
+
+
+
+
+#endif /* VARIABLES_H_ */

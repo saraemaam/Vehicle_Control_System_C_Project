@@ -1,0 +1,14 @@
+21:27:46 **** Rebuild of configuration Debug for project Vehicle_Control_System_Project ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c:8:6: warning: return type of 'main' is not 'int' [-Wmain]
+    8 | void main(void)
+      |      ^~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o program.o "..\\program.c" 
+..\program.c: In function 'Sensor_set_menu':
+..\program.c:204:17: warning: implicit declaration of function 'main' [-Wimplicit-function-declaration]
+  204 |                 main();
+      |                 ^~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o variables.o "..\\variables.c" 
+gcc -o Vehicle_Control_System_Project.exe main.o program.o variables.o 
+Info: Nothing to build for Vehicle_Control_System_Project

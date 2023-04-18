@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;vehicle_control_system/types.h&apos; to &apos;data_types.h&apos;" description="Rename resource &apos;types.h&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="types.h" name="data_types.h" stamp="1678215621181" updateReferences="true"/>
+</session>
